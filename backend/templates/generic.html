@@ -1,0 +1,26 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        {% if debug %}
+            <link rel="stylesheet" type="text/css" href="{% static "build/main.css" %}">
+        {% else %}
+            <link rel="stylesheet" type="text/css" href="{% static "dist/main.css" %}">
+        {% endif %}
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <div id="wrapper">
+            {% block body %}{% endblock %}
+        </div>
+
+        {% if debug %}
+            <script src="{% static "build/app.js" %}"></script>
+        {% else %}
+            <script src="{% static "dist/app.js" %}"></script>
+        {% endif %}
+    </body>
+</html>

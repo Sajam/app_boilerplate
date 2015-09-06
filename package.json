@@ -1,0 +1,17 @@
+{
+  "name": "app_boilerplate",
+  "version": "0.0.1",
+  "description": "Frontend workflow with ReactJS and SCSS",
+  "author": "Daniel Kowalczyk",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "browserify": "~11.0.1",
+    "reactify": "~1.1.1",
+    "vinyl-source-stream": "~1.1.0",
+    "gulp-sass": "~2.0.4"
+  },
+  "dependencies": {
+    "react": "~0.13.3",
+    "jquery": "~2.1.4"
+  }
+}
